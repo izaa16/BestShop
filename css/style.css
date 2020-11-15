@@ -1,0 +1,570 @@
+:root{
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+    --color-primary: #08A6E4;
+    --primary-shadow-color: rgba(7, 172, 230, .16);
+    --color-red: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --button-radius: 35px;
+  }
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-open-sans);
+  }
+
+
+/*HEADER*/
+.container{
+    width: 1325px;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+header .container > a{
+        font-family: var(--font-raleway);
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--color-primary);
+        padding: 25px;
+}
+
+header .container ul li a {
+color: var(--color-grey);
+padding: 0 26px;
+font-family: var(--font-open-sans);
+}
+header .container ul li a:hover{
+color: var(--color-black);
+padding-bottom: 28px;
+border-bottom: 3px solid var(--color-primary);
+
+}
+
+
+header .container ul{
+    display:flex;
+    font-weight: 700;
+    height: 100%;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.2rem;
+}
+
+
+/*BANNER*/
+
+.banner{
+    background-image: url(../assets/Background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+}
+
+.banner h1{
+    text-align: center;
+    justify-content: center;
+    margin-top: 130px;
+    font-family: var(--font-raleway);
+    font-size: 57px;
+}
+
+.banner p{
+    text-align: center;
+    font-family: var(--font-open-sans);
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.banner button {
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    padding: 25px 150px;
+    border-radius: var(--button-radius);
+    border: none;
+    background-color: var(--color-primary);
+    border-radius: var(--button-radius);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+
+/*STATISTIC*/
+
+.statistics{
+    width: 100%;
+    height:531px;
+    text-align: center;
+}
+
+.statistics h2 {
+    font-family: var(--font-open-sans);
+    font-size: 42px;
+    color:var(--color-black);
+    padding-top: 100px;
+}
+
+.statistics .stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    margin-top: 121px;    
+}
+
+.statistics .stat .circle
+{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+.statistics .stat > div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-around;  
+}
+.statistics .stat > div >.circle > img{
+    position: absolute;
+    top:6px;
+    left: 35px;
+}
+.statistics .stat  > .column-2 >.circle > img{
+    position: absolute;
+    top:14px;
+    left: 16px; 
+}
+.column-1 .circle{
+    background-color: var(--color-red);
+}
+
+.column-2 .circle{
+    background-color: var(--color-primary)
+}
+.column-3 .circle{
+    background-color: var(--color-green)
+}
+
+.statistics .stat .column-1 p:first-of-type, .statistics .stat .column-2 p:first-of-type,.statistics .stat .column-3 p:first-of-type{
+    font-family: var(--font-raleway);
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    margin-top: 13px;
+}
+
+.statistics .stat .column-1 p:last-of-type, .statistics .stat .column-2 p:last-of-type,.statistics .stat .column-3 p:last-of-type{
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    color:var(--color-grey);
+    padding: 15px 10px;
+}
+
+/*BENEFITS*/
+
+.benefits .container{
+    width: 100%;
+    height: 1395px;
+    background-color: var(--color-light-grey);
+    padding: 100px 125px;
+}
+
+.benefits .container .benefits_macbook, .benefits .container .benefits_phone{
+    display: flex;
+    width: 1124px;
+height: 370px;
+    background-color: var(--color-white);
+   border: 1px solid #E8E9ED;
+    margin-bottom: 37px;
+    display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.benefits .container .benefits_trumpet{
+flex-grow: 1;
+width: 623px;
+height: 370px;
+padding-right: 30px;
+background-color: var(--color-white);
+border: 1px solid #E8E9ED;
+margin-bottom: 37px;
+justify-content: space-between;
+flex-direction: row;
+}
+
+
+.benefits .container .benefits_phone img{
+    display: inline-block;
+    
+}
+
+.benefits .container h2{
+        font-family: var(--font-raleway);
+        font-size: 2.25rem;
+        box-sizing: content-box;
+        display: block;
+  max-width: 415px;
+  margin: 90px 36px;
+}
+
+.benefits .container p{
+    margin-top: 30px;
+    line-height: 1.5rem;
+}
+
+
+.benefits .container div img{
+    width: 386px;
+    height: 219px;
+    position: relative;
+    z-index: 2;
+    margin-right: 117px;
+  margin-bottom: 38px;
+
+}
+
+.benefits .container div img::before{
+content: "";
+width: 180px;
+height: 180px;
+background-color: var(--accent-color);
+display: block;
+border-radius: 40px;
+position: absolute;
+right: 0;
+top: -40px;
+transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+/*PRICING*/
+.pricing
+{
+    width: 100%;
+    height: 616px;
+    margin-top: 100px;
+}
+.pricing h2{
+    text-align: center;
+    font-family: var(--font-open-sans);
+    font-size: 42px;
+    color: var(--color-black);
+}
+
+.pricing .container 
+{
+    width: 100%;
+    height: 524px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.pricing .container .basic
+{
+    width: 370px;
+    height: 460px;
+    border: 1px solid var(--color-red);
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing .container .proffesional
+{
+    width: 405px;
+    height: 500px;
+    border: 1px solid var(--color-primary);
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 10px 27px 0px var(--color-primary-shadow);
+}
+.pricing .container .premium
+{
+    width: 370px;
+    height: 460px;
+    border: 1px solid var(--color-green);
+    border-radius: 18px;
+    text-align: center; 
+    position: relative;
+}
+.pricing .container span
+{
+    font-family: var(--font-raleway);
+    font-size: 21px;
+    font-weight: var(--font-size-large);
+    color: var(--color-black);
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 14px;
+}
+.pricing .container .basic strong{
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: var(--font-size-small);
+    color: var( --color-red);
+}
+
+.pricing .container .proffesional strong{
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: var(--font-size-small);
+    color: var(--color-primary);
+}
+
+.pricing .container .premium strong{
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: var(--font-size-small);
+    color: var(--color-green);
+}
+.pricing .container .proffesional strong::after, 
+.pricing .container .premium strong::after{
+    content: "Limited offer";
+   font-family: var(--font-open-sans);
+   font-size: 12px;
+   font-weight: 700;
+   color: var(--color-black);
+   display: block;
+   padding-top: 20px;
+}
+
+.pricing .container  ul
+{
+  position: absolute;
+  top:205px ;
+  left: 119px;
+  font-family: var(--font-open-sans);
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+
+.pricing .container li{
+    margin-bottom: 20px;
+}
+.proffesional  li{
+    margin-bottom: 26px;
+}
+
+.pricing .container li::before{
+    content: url('../assets/Checkmark-1.svg') ;
+    margin-right: 10px;
+}
+.pricing .container .basic li:nth-child(4)::before,
+.pricing .container .basic li:nth-child(5)::before{
+   content: url('../assets/Close.svg') ;
+   margin-right: 10px;
+}
+.pricing .container .proffesional li:last-child::before
+{
+    content: url('../assets/Close.svg') ;
+    margin-right: 10px;
+}
+
+.pricing .container .button{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    border-radius: 23px;
+    bottom: -25px;
+    left:111px;
+    padding-top: 16px;
+    text-decoration: none; 
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-white);
+}
+
+.pricing .container .basic .button
+{
+    background-color: var(--color-red);
+    
+}
+.pricing .container .proffesional .button{
+    background-color: var(--color-primary);
+    
+}
+
+.pricing .container .premium .button{ 
+    background-color: var(--color-green);
+}
+
+
+/*CONTACT*/
+.contact {
+    width: 1325px;
+    height: 540px;
+    padding: 70px;
+    display: flex;
+    margin: 115px 0;
+    justify-content: center;
+}
+.contact .container{
+display: flex;
+width: 896px;
+height: 376px;
+}
+
+.contact .container .contact_info{
+    width: 575px;
+    height: 360px;
+
+}
+
+.contact .container .contact_info h2{
+    text-align: left;
+    font-family: var(--font-open-sans);
+    font-size: 3.0625rem;
+    line-height: 3rem;
+    margin-bottom:22px ;
+}
+
+.contact .container .contact_info p{
+    font-family: var(--font-raleway);
+    margin: 22px 0 42px;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.contact .container .contact_info a{
+    text-decoration: none;
+    font-family: var(--font-open-sans);
+    color: var(--color-grey);
+}
+
+
+.contact .container form{
+    width: 440px;
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container form label {
+font-family: var(--font-raleway);
+  color: var(--color-grey);
+}
+
+.contact .container form .row input {
+    padding: 15px;
+    width: 440px;
+    border:none;
+    border-bottom:2px solid var(--color-grey);
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.contact .container form  .checkbox{
+    display: flex;
+}
+
+
+.contact .container form .checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.contact .container form .checkbox {
+    display: flex;
+    font-family: var(--font-open-sans);
+    font-size: 12px;
+    color: var(--color-grey);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contact .container form .checkbox span {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact .container form .checkbox input:checked+ span {
+    background-image: url(../assets/Checkmark.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:80% 80%;
+}
+
+ .container form  button{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 20px 97px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--color-primary);
+    border-radius: var(--button-radius);
+    display: inline-block;
+    border: none;
+}
+
+
+/*FOOTER*/
+
+footer .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 10px 0;
+    width: 100%;
+    height: 70px;
+}
+footer .container .logo_info {
+    display: flex;
+    flex-direction: column;
+}
+footer .container .logo_info a{ 
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    padding-left: 15px;
+}
+
+footer .container .logo_info span{
+  font-size: 0.68rem;
+  line-height: 1.5rem;
+  color: var(--color-grey);
+  padding-left: 15px;
+}
+
+footer .container ul{
+    
+}
