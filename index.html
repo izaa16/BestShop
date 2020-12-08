@@ -37,18 +37,18 @@
 
     <section class="statistics">
         <h2>The most popular sales platform in country</h2>
-        <div class="stat">
-            <div class="column-1">
+        <div class="container">
+            <div class="person">
                 <div class="circle"><img src="assets/Person.svg" /></div>
                 <p>100000 +</p>
                 <p>daliy entries</p>
             </div>
-            <div class="column-2">
+            <div class="eye">
                 <div class="circle"><img src="assets/Eye.svg" /></div>
                 <p>2000000 +</p>
                 <p>seen products<br />every day</p>
             </div>
-            <div class="column-3">
+            <div class="catalog">
                 <div class="circle"><img src="assets/Catalog.svg" /></div>
                 <p>10000 +</p>
                 <p>added posts<br />daily</p>
@@ -57,40 +57,36 @@
     </section>
 
     <section class="benefits">
-        <div class="container">
-            <div class="benefits_macbook">
+        <div class="box macbook">
+            <div class="description">
                 <h2>Be always first</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
-                </p>
-                <img src="assets/Macbook.png" alt="macbook" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere nostrum voluptates nam
+                    praesentium possimus non velit, asperiores quasi earum.</p>
             </div>
-
-            <div class="benefits_phone">
-                <img src="assets/iPhone.png" alt="iPhone" />
-                <h2>Your shop is<br>where you are!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
-                </p>
-
+            <div class="image">
+                <img src="../BestShop/assets/Macbook.png" alt="macbook" />
             </div>
-
-            <div class="benefits_trumpet">
-                <h2>Your shop is<br>where you are!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
-                </p>
-                <img src="assets/Trumpet.png" alt="Trumpet" />
+        </div>
+        <div class="box iphone">
+            <div class="image">
+                <img src="../BestShop/assets/iPhone.png" alt="iPhone" />
             </div>
-            <div class="trumpet">
-
+            <div class="description">
+                <h2>Your shop is <br> where you are!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere nostrum voluptates nam
+                    praesentium possimus non velit, asperiores quasi earum.</p>
             </div>
+        </div>
+        <div class="box trumpet">
+            <div class="description">
+                <h2>Increase recognition <br> your brand!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere nostrum voluptates nam
+                    praesentium possimus non velit, asperiores quasi earum.</p>
+            </div>
+            <div class="image">
+                <img src="../BestShop/assets/Trumpet.png" alt="Trumpet" />
+            </div>
+        </div>
     </section>
 
     <section class="pricing">
@@ -153,26 +149,34 @@
                 </a>
             </div>
             <form>
-                <div class="row">
-                    <label="name">Name</label>
-                        <input type="text" id="name" />
 
-                        <label"email">E-mail</label>
-                            <input type="email" id="email" />
-                </div>
-                <label class="checkbox">
-                    <input type="checkbox">
-                    <span></span>
-                    I hereby give consent for my personal data included in my application to be processed for
-                    the purposes of the recruitment process under the European Parliament’s and Council of the
-                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
-                    the processing
-                    of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data
-                    Protection Directive)
-                </label>
-                <button>Send</button>
-            </form>
-        </div>
+                <form class="form">
+
+                    <div class="form-container ">
+                        <label class="label-name" for="name">Name</label>
+                        <input type="text" class="input" id="name">
+                    </div>
+
+                    <div class="form-container ">
+                        <label class="label-email" for="email">E-mail</label>
+                        <input type="email" class="input" id="email">
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span></span>
+                        I hereby give consent for my personal data included in my application to be processed for
+                        the purposes of the recruitment process under the European Parliament’s and Council of the
+                        European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                        regard to
+                        the processing
+                        of personal data and on the free movement of such data, and repealing Directive 95/46/EC
+                        (Data
+                        Protection Directive)
+                    </label>
+                    <button>Send</button>
+                </form>
+
     </section>
 
     <footer>

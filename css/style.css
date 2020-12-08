@@ -45,13 +45,12 @@ color: var(--color-grey);
 padding: 0 26px;
 font-family: var(--font-open-sans);
 }
+
 header .container ul li a:hover{
 color: var(--color-black);
 padding-bottom: 28px;
 border-bottom: 3px solid var(--color-primary);
-
 }
-
 
 header .container ul{
     display:flex;
@@ -119,14 +118,14 @@ header .container ul{
     padding-top: 100px;
 }
 
-.statistics .stat {
+.statistics .container {
     display: flex;
     align-items: center;
     justify-content: space-around ;
     margin-top: 121px;    
 }
 
-.statistics .stat .circle
+.statistics .container  .circle
 {
     width: 63px;
     height: 63px;
@@ -134,34 +133,37 @@ header .container ul{
     position: relative;
     text-align: center;
 }
-.statistics .stat > div{
+.statistics .container  > div{
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content:space-around;  
 }
-.statistics .stat > div >.circle > img{
+.statistics .container  > div >.circle > img{
     position: absolute;
     top:6px;
     left: 35px;
 }
-.statistics .stat  > .column-2 >.circle > img{
+.statistics .container> .eye> .circle> img{
     position: absolute;
     top:14px;
     left: 16px; 
 }
-.column-1 .circle{
+.person .circle{
     background-color: var(--color-red);
 }
 
-.column-2 .circle{
+.eye .circle{
     background-color: var(--color-primary)
 }
-.column-3 .circle{
+
+.catalog  .circle{
     background-color: var(--color-green)
 }
 
-.statistics .stat .column-1 p:first-of-type, .statistics .stat .column-2 p:first-of-type,.statistics .stat .column-3 p:first-of-type{
+.statistics .container  .person  p:first-of-type, 
+.statistics .container  .eye p:first-of-type,
+.statistics .container  .catalog p:first-of-type{
     font-family: var(--font-raleway);
     font-size: 1.25rem;
     font-weight: 800;
@@ -169,7 +171,9 @@ header .container ul{
     margin-top: 13px;
 }
 
-.statistics .stat .column-1 p:last-of-type, .statistics .stat .column-2 p:last-of-type,.statistics .stat .column-3 p:last-of-type{
+.statistics .container  .person  p:last-of-type, 
+.statistics .container  .eye p:last-of-type,
+.statistics .container  .catalog p:last-of-type{
     font-family: var(--font-raleway);
     font-size: 20px;
     color:var(--color-grey);
@@ -178,94 +182,164 @@ header .container ul{
 
 /*BENEFITS*/
 
-.benefits .container{
+.benefits {
     width: 100%;
-    height: 1395px;
-    background-color: var(--color-light-grey);
-    padding: 100px 125px;
-}
-
-.benefits .container .benefits_macbook, .benefits .container .benefits_phone{
+    padding: 105px 0;
+    background: #F7F7F7;
     display: flex;
-    width: 1124px;
-height: 370px;
-    background-color: var(--color-white);
-   border: 1px solid #E8E9ED;
-    margin-bottom: 37px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits .box {
+    width: 1150px;
+    height: 370px;
+    margin: 30px;
     display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 5px;
 }
 
-.benefits .container .benefits_trumpet{
-flex-grow: 1;
-width: 623px;
-height: 370px;
-padding-right: 30px;
-background-color: var(--color-white);
-border: 1px solid #E8E9ED;
-margin-bottom: 37px;
-justify-content: space-between;
-flex-direction: row;
+.macbook .description {
+    position: relative;
+    width: 415px;
+    padding-left: 35px;
 }
 
-
-.benefits .container .benefits_phone img{
-    display: inline-block;
-    
+.macbook .description::after {
+    content: "";
+    width: 330px;
+    height: 4px;
+    background: #FB3B64;
+    position: absolute;
 }
 
-.benefits .container h2{
-        font-family: var(--font-raleway);
-        font-size: 2.25rem;
-        box-sizing: content-box;
-        display: block;
-  max-width: 415px;
-  margin: 90px 36px;
+.box h2 {
+    text-align: left;
+    font-size: 36px;
+    color: #000000;
+    font-family: var(--font-raleway);
+    line-height: 42px;
 }
 
-.benefits .container p{
-    margin-top: 30px;
-    line-height: 1.5rem;
+.box p {
+    text-align: left;
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    padding: 30px 0;
 }
 
+.box .image {
+    position: relative;
+}
 
-.benefits .container div img{
-    width: 386px;
+.macbook .image {
+    position: relative;
+}
+
+.macbook .image img {
+    width: 387px;
     height: 219px;
     position: relative;
-    z-index: 2;
-    margin-right: 117px;
-  margin-bottom: 38px;
-
+    top: 30px;
+    right: 120px;
 }
 
-.benefits .container div img::before{
-content: "";
-width: 180px;
-height: 180px;
-background-color: var(--accent-color);
-display: block;
-border-radius: 40px;
-position: absolute;
-right: 0;
-top: -40px;
-transform: rotate(45deg);
+.macbook .image::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: var(--color-red);
+    transform: rotate(45deg);
+    border-radius: 41px;
+    position: absolute;
+    left: 80px;
 }
 
+.iphone .image img {
+    width: 426px;
+    height: 328px;
+    position: relative;
+    top: 10px;
+    left: 80px;
+}
 
+.iphone .image::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: 70px;
+    bottom: 15px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
 
+.iphone .description {
+    width: 415px;
+    padding-right: 20px;
+    position: relative;
+}
 
+.iphone .description::after {
+    content: "";
+    width: 330px;
+    height: 4px;
+    background: var(--color-primary);
+    position: absolute;
+}
 
+.benefits .trumpet {
+    background: #F7F7F7;
+    border: none;
+}
 
+.trumpet .description {
+    width: 623px;
+    height: 370px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: 70px 35px;
+    position: relative;
+}
+
+.trumpet .description::after {
+    content: "";
+    width: 330px;
+    height: 4px;
+    background: var(--color-green);
+    position: absolute;
+}
+
+.trumpet .image {
+    width: 440px;
+    height: 370px;
+    background: var(--color-green);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trupet .image img {
+    width: 296px;
+    height: 207px;
+}
 
 /*PRICING*/
-.pricing
-{
+.pricing{
     width: 100%;
     height: 616px;
     margin-top: 100px;
 }
+
 .pricing h2{
     text-align: center;
     font-family: var(--font-open-sans);
@@ -273,8 +347,7 @@ transform: rotate(45deg);
     color: var(--color-black);
 }
 
-.pricing .container 
-{
+.pricing .container {
     width: 100%;
     height: 524px;
     margin-top: 50px;
@@ -283,8 +356,7 @@ transform: rotate(45deg);
     align-items:center;
     flex-wrap: wrap;
 }
-.pricing .container .basic
-{
+.pricing .container .basic{
     width: 370px;
     height: 460px;
     border: 1px solid var(--color-red);
@@ -293,8 +365,7 @@ transform: rotate(45deg);
     position: relative;
 }
 
-.pricing .container .proffesional
-{
+.pricing .container .proffesional{
     width: 405px;
     height: 500px;
     border: 1px solid var(--color-primary);
@@ -303,8 +374,7 @@ transform: rotate(45deg);
     position: relative;
     box-shadow: 5px 10px 27px 0px var(--color-primary-shadow);
 }
-.pricing .container .premium
-{
+.pricing .container .premium{
     width: 370px;
     height: 460px;
     border: 1px solid var(--color-green);
@@ -312,8 +382,7 @@ transform: rotate(45deg);
     text-align: center; 
     position: relative;
 }
-.pricing .container span
-{
+.pricing .container span{
     font-family: var(--font-raleway);
     font-size: 21px;
     font-weight: var(--font-size-large);
@@ -353,8 +422,7 @@ transform: rotate(45deg);
    padding-top: 20px;
 }
 
-.pricing .container  ul
-{
+.pricing .container ul{
   position: absolute;
   top:205px ;
   left: 119px;
@@ -380,8 +448,7 @@ transform: rotate(45deg);
    content: url('../assets/Close.svg') ;
    margin-right: 10px;
 }
-.pricing .container .proffesional li:last-child::before
-{
+.pricing .container .proffesional li:last-child::before{
     content: url('../assets/Close.svg') ;
     margin-right: 10px;
 }
@@ -401,14 +468,12 @@ transform: rotate(45deg);
     color: var(--color-white);
 }
 
-.pricing .container .basic .button
-{
+.pricing .container .basic .button{
     background-color: var(--color-red);
     
 }
 .pricing .container .proffesional .button{
     background-color: var(--color-primary);
-    
 }
 
 .pricing .container .premium .button{ 
@@ -480,11 +545,9 @@ font-family: var(--font-raleway);
     box-sizing: border-box;
 }
 
-
 .contact .container form  .checkbox{
     display: flex;
 }
-
 
 .contact .container form .checkbox input {
     position: absolute;
@@ -533,7 +596,37 @@ font-family: var(--font-raleway);
     display: inline-block;
     border: none;
 }
+/*FORM*/
 
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-name {
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    line-height: 40px;                  
+}
+
+.label-email {
+    margin-top: 35px;
+}
 
 /*FOOTER*/
 
@@ -565,6 +658,5 @@ footer .container .logo_info span{
   padding-left: 15px;
 }
 
-footer .container ul{
-    
+footer .container ul li {
 }
